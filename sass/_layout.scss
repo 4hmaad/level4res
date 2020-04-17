@@ -3,6 +3,10 @@
   max-width: 150rem;
   margin: 4rem auto;
   background-color: var(--color-grey-light-1);
+
+  @include respond("tab-port") {
+    margin: 0;
+  }
 }
 
 .header {

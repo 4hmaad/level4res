@@ -31,7 +31,7 @@ html {
   @media (max-width: 56.25em) {
     html {
       font-size: 52%; } }
-  @media (max-width: 37.5em) {
+  @media (max-width: 34.375em) {
     html {
       font-size: 46%; } }
 
@@ -49,6 +49,9 @@ body {
   max-width: 150rem;
   margin: 4rem auto;
   background-color: var(--color-grey-light-1); }
+  @media (max-width: 56.25em) {
+    .container {
+      margin: 0; } }
 
 .header {
   display: flex;
@@ -151,7 +154,7 @@ body {
       .content .sidebar .menu__item {
         margin: 0;
         padding: 2rem; } }
-    @media (max-width: 37.5em) {
+    @media (max-width: 34.375em) {
       .content .sidebar .menu__item {
         padding: 1rem; } }
   .content .sidebar .menu__item::before {
@@ -199,6 +202,10 @@ body {
     font-weight: 300;
     color: var(--color-ligh-4);
     padding: 1.5rem 3rem; }
+    @media (max-width: 34.375em) {
+      .content .overview .overview-name {
+        padding: 0;
+        font-size: 2rem; } }
   .content .overview .overview-icons {
     margin-right: auto; }
     .content .overview .overview-icons .overview__icon {
@@ -209,6 +216,9 @@ body {
     display: flex;
     align-items: center;
     margin-right: 4rem; }
+    @media (max-width: 34.375em) {
+      .content .overview .overview-location {
+        margin: 0; } }
     .content .overview .overview-location .overview-location__icon {
       fill: var(--color-primary);
       height: 1.5rem;
