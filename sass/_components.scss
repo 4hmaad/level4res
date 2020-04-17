@@ -142,7 +142,7 @@
     display: flex;
     flex-direction: row;
 
-    .gallery__image {
+    &__image {
       display: block;
       width: 100%;
       height: auto;
