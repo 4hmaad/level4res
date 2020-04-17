@@ -157,7 +157,7 @@ body {
   .content .gallery .gallery__image {
     display: block;
     width: 100%;
-    height: 35rem;
+    height: auto;
     background-position: center;
     background-size: cover; }
 
