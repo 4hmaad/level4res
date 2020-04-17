@@ -61,12 +61,23 @@
   }
 }
 .content {
+  @include respond("tab-port") {
+    flex-direction: column;
+  }
+
   .sidebar {
     .menu {
       display: flex;
       flex-direction: column;
       list-style: none;
       margin-top: 2rem;
+
+      @include respond("tab-port") {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 0.5rem 0rem;
+      }
 
       &__item {
         display: flex;
@@ -79,6 +90,10 @@
         text-transform: uppercase;
         user-select: none;
         cursor: pointer;
+
+        @include respond("tab-port") {
+          margin: 0;
+        }
       }
 
       &__item::before {
