@@ -76,7 +76,7 @@
         flex-direction: row;
         width: 100%;
         justify-content: space-evenly;
-        margin: 0.5rem 0rem;
+        margin: 0;
       }
 
       &__item {
@@ -93,6 +93,11 @@
 
         @include respond("tab-port") {
           margin: 0;
+          padding: 2rem;
+        }
+
+        @include respond("phone") {
+          padding: 1rem;
         }
       }
 
@@ -213,12 +218,21 @@
     padding: 4rem;
     background-color: var(--color-grey-light-2);
 
+    @include respond("tab-port") {
+      flex-direction: column;
+    }
+
     .description {
       background: #fff;
       padding: 3rem;
       font-size: 1.4rem;
       margin-right: 4.5rem;
       box-shadow: var(--shadow-light);
+
+      @include respond("tab-port") {
+        margin-right: 0;
+        margin-bottom: 4rem;
+      }
 
       .paragraph {
         padding-bottom: 2rem;
@@ -280,6 +294,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      @include respond("tab-port") {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+      }
     }
 
     .review {
@@ -343,6 +363,7 @@
     cursor: pointer;
     transition: 0.2s ease-in-out;
     background: transparent;
+    align-self: center;
 
     &:hover,
     &:active {
