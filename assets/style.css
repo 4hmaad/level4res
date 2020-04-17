@@ -348,7 +348,8 @@ body {
   font-weight: 300;
   font-size: 2.25rem;
   color: var(--color-grey-dark-4);
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 .content .footer__btn {
   font-size: 1.8rem;
