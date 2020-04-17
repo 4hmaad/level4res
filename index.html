@@ -1,0 +1,189 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trillo</title>
+    <link type="image/png" href="img/favicon.png" rel="shortcut icon" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h4 class="logo">LEVEL IV Restaurant</h4>
+
+        <form class="search">
+          <input placeholder="Search" type="text" class="search__input" />
+          <svg class="search__icon">
+            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+          </svg>
+        </form>
+
+        <ul class="menu">
+          <li class="menu__button-box">
+            <a href="#" class="menu__button"> Login </a>
+          </li>
+        </ul>
+      </header>
+
+      <content class="content">
+        <sidebar class="sidebar">
+          <ul class="menu">
+            <li class="menu__item menu__item--active">
+              <svg class="menu__icon">
+                <use xlink:href="img/sprite.svg#icon-home"></use>
+              </svg>
+              <span class="menu__link">RESTAURANT</span>
+            </li>
+            <li class="menu__item">
+              <svg class="menu__icon">
+                <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+              </svg>
+              <span class="menu__link">Hotel</span>
+            </li>
+
+            <li class="menu__item">
+              <svg class="menu__icon">
+                <use xlink:href="img/sprite.svg#icon-key"></use>
+              </svg>
+              <span class="menu__link">Order food</span>
+            </li>
+            <li class="menu__item">
+              <svg class="menu__icon">
+                <use xlink:href="img/sprite.svg#icon-map"></use>
+              </svg>
+              <span class="menu__link">Location</span>
+            </li>
+          </ul>
+        </sidebar>
+
+        <main class="hotel-view">
+          <div class="gallery">
+            <div class="gallery__item">
+              <img
+                class="gallery__image"
+                src="img/res-1.jpg"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                class="gallery__image"
+                src="img/res-2.jpg"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                class="gallery__image"
+                src="img/res-3.jpg"
+              />
+            </div>
+          </div>
+
+          <div class="overview">
+            <h1 class="overview-name">Level IV Restaurant</h1>
+            <div class="overview-icons">
+              <svg class="overview__icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+
+            <div class="overview-location">
+              <svg class="overview-location__icon">
+                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+              </svg>
+              <a href="#" class="overview-location__link">San Francisco, California</a>
+            </div>
+
+            <div class="overview-ratings">
+              <span class="overview-ratings__amount">
+                8.6
+              </span>
+              <span class="overview-ratings__votes">
+                489 votes
+              </span>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="description">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium
+                cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
+              </p>
+              <p class="paragraph">
+                Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.
+              </p>
+              <ul class="list">
+                <li class="list__item">Close to the beach</li>
+                <li class="list__item">Free coffee</li>
+                <li class="list__item">Happy music</li>
+                <li class="list__item">Free fast wifi</li>
+                <li class="list__item">Air conditioning and heating</li>
+                <li class="list__item">Pets allowed</li>
+                <li class="list__item">We speak all languages</li>
+                <li class="list__item">Perfect for families</li>
+              </ul>
+              <div class="recommend">
+                <p class="recommend__count">
+                  Lucy and 3 other friends recommend this hotel.
+                </p>
+                <div class="recommend__friends">
+                  <img src="img/user-3.jpg" alt="Friend 1" class="recommend__photo" />
+                  <img src="img/user-4.jpg" alt="Friend 2" class="recommend__photo" />
+                  <img src="img/user-5.jpg" alt="Friend 3" class="recommend__photo" />
+                  <img src="img/user-6.jpg" alt="Friend 4" class="recommend__photo" />
+                </div>
+              </div>
+            </div>
+
+            <figure class="user-reviews">
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia
+                  ex.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img src="img/user-1.jpg" alt="User 1" class="review__photo" />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Nick Smith</p>
+                    <p class="review__user-date">Feb 23rd, 2017</p>
+                  </div>
+                  <div class="review__rating">7.8</div>
+                </figcaption>
+              </figure>
+
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img src="img/user-2.jpg" alt="User 1" class="review__photo" />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Mary Thomas</p>
+                    <p class="review__user-date">Sept 13th, 2017</p>
+                  </div>
+                  <div class="review__rating">9.3</div>
+                </figcaption>
+              </figure>
+
+              <button class="btn-inline">Show all <span>→</span></button>
+            </figure>
+          </div>
+
+          <footer class="footer">
+            <h4 class="footer__text">One cannot think well, love well, sleep well, if one has not dined well.</h4>
+            <button class="footer__btn">Order now!</button>
+          </footer>
+        </main>
+      </content>
+    </div>
+  </body>
+</html>
